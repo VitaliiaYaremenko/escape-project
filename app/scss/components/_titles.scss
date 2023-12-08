@@ -1,0 +1,18 @@
+.title {
+  font-family: "Lora";
+  color: $color-primary;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 0 auto;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 1px;
+    background: #dedede;
+    left: 41%;
+    bottom: 0;
+  }
+}

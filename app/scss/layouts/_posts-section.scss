@@ -1,0 +1,82 @@
+.posts {
+  &__section {
+  }
+
+  &__container {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    @include secondary-title(20px, 1.3, 2px, $color-sub-title);
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  &__sections-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 16px;
+    padding: 7px 0;
+  }
+}
+
+.post {
+  &__card {
+    position: relative;
+  }
+
+  &__card-img {
+    @include size-img(460px, 280px);
+  }
+  &__card-btn {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 20px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+  }
+
+  &__card-inner {
+    position: absolute;
+    content: "";
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+  }
+
+  &__card-title {
+    @include text("Lora", 27px, $color-primary);
+    margin-bottom: 6px;
+  }
+
+  &__card-text {
+    font-size: 14px;
+    color: $color-main-text;
+    margin-bottom: 12px;
+  }
+}
+.card {
+  &__follow {
+    @include flex-main(flex, space-between, center);
+    @include style(12px, 400, 2.9);
+    color: $color-main-text-dark;
+  }
+
+  &__follow-info {
+    @include flex-secondary(flex, center, 10px);
+  }
+
+  &__follow-img {
+    @include size-img(26px, 26px);
+    border-radius: $br-radius-img;
+  }
+
+  &__follow-user {
+    @include style(12px, 400, 3);
+    color: $color-main-text-dark;
+  }
+}
+.time {
+}

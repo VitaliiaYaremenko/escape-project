@@ -1,0 +1,65 @@
+.touch {
+  &__section {
+    padding: 62px 0 90px;
+    @include background(
+      url("../../images/touch-section/touch.jpg"),
+      no-repeat,
+      center top,
+      cover
+    );
+    position: relative;
+  }
+
+  &__container {
+    padding: 20px 0 80px;
+  }
+
+  &__container-title {
+    position: relative;
+    padding-bottom: 17px;
+    color: $color-primary-light;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+
+.form {
+  &__field {
+    @include flex-main(flex, center, center);
+    margin: 20px 0 10px;
+    font-family: "Roboto";
+    font-size: 12px;
+  }
+
+  &__label {
+  }
+
+  &__input {
+    width: 375px;
+    height: 50px;
+    padding: 18px 35px;
+    color: $color-input;
+    font-family: "Roboto";
+    border-radius: 3px 0px 0px 3px;
+    background-color: $color-primary;
+    border: none;
+    &:focus::placeholder {
+      color: $main-bg-btn;
+    }
+  }
+
+  &__button {
+    padding: 19px 44px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: rgba(255, 255, 255, 0.28);
+    color: $color-form-btn;
+    transition: background 0.3s linear;
+    &:hover {
+      background-color: transparent;
+      outline: 1px solid $main-bg-btn;
+    }
+    &:focus {
+      background-color: $main-bg-btn;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.btn {
+  background: transparent;
+  cursor: pointer;
+  background-color: $main-bg-btn;
+  color: $color-primary;
+  transition: background 0.3s linear;
+
+  &:hover {
+    background-color: transparent;
+    outline: 1px solid $color-primary;
+  }
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.28);
+  }
+}

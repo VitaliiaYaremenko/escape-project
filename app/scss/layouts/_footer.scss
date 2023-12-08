@@ -1,0 +1,25 @@
+.footer {
+  padding: 28px 0;
+  background-color: rgba(35, 47, 56, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &__container {
+  }
+
+  &__inner {
+  }
+
+  &__nav {
+    @include flex-main(flex, space-between, center);
+  }
+
+  &__menu {
+    @include flex-secondary(flex, center, 20px);
+  }
+
+  &__list a {
+    @include secondary-title(11px, 2, 1px, $color-main-text);
+  }
+}

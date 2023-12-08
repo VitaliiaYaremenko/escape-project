@@ -1,0 +1,22 @@
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-primary;
+  display: inline-block;
+  transition: all 0.3s linear;
+  &:hover {
+    color: $color-sub-title;
+    transform: scale(1.1);
+    font-weight: 700;
+  }
+  &:active {
+    color: $main-bg-btn;
+  }
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-primary;
+  font-size: 26px;
+}

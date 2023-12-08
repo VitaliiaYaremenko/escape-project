@@ -1,0 +1,21 @@
+.offers {
+  &__section {
+    background-color: $color-primary;
+    padding: 23px 0;
+    margin-bottom: 60px;
+  }
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__item {
+    @include flex-main(flex, space-between, center);
+    gap: 21px;
+  }
+
+  &__list {
+    @include text("Lora", 14, $color-secondary-grey);
+  }
+}
